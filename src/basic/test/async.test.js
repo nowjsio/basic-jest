@@ -32,8 +32,6 @@ describe('fetchProduct', () => {
       try {
         const fetchItem = await fetchProduct('error');
       } catch (e) {
-        console.log(e);
-        // expect(e).toMatch(/NetworkError/); // regex || string 사용
         expect(e).toMatch(/networkerror/i);
       }
     });

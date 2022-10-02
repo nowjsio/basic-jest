@@ -23,7 +23,7 @@ module.exports = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
@@ -31,7 +31,7 @@ module.exports = {
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -172,23 +172,41 @@ module.exports = {
   // timers: "real",
 
   // A map from regular expressions to paths to transformers
-  // transform: undefined,
 
-  // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/",
-  //   "\\.pnp\\.[^\\/]+$"
+  // transform: {
+  //   '^.+\\.(js|jsx)?$': 'babel-jest',
+  // },
+
+  // // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
+  // transformIgnorePatterns: ['/node_modules/', '\\.pnp\\.[^\\/]+$'],
+
+  // // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
+  // // unmockedModulePathPatterns: undefined,
+
+  // // Indicates whether each individual test should be reported during the run
+  // // verbose: undefined,
+
+  // // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
+  // // watchPathIgnorePatterns: [],
+
+  // // Whether to use watchman for file crawling
+  // // watchman: true,
+  // moduleFileExtensions: ['js', 'mjs', 'cjs', 'jsx', 'ts', 'tsx', 'json', 'node'],
+
+  // // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+  // moduleNameMapper: {
+  //   '^@/(.*)$': '<rootDir>/$1',
+  // },
+
+  // // The test environment that will be used for testing
+  // testEnvironment: 'jest-environment-node',
+
+  // // The glob patterns Jest uses to detect test files
+  // testMatch: [
+  //   '<rootDir>/**/*.test.(js|jsx|ts|tsx)',
+  //   '<rootDir>/(tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx))',
   // ],
 
-  // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
-  // unmockedModulePathPatterns: undefined,
-
-  // Indicates whether each individual test should be reported during the run
-  // verbose: undefined,
-
-  // An array of regexp patterns that are matched against all source file paths before re-running tests in watch mode
-  // watchPathIgnorePatterns: [],
-
-  // Whether to use watchman for file crawling
-  // watchman: true,
+  // // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
+  // transformIgnorePatterns: ['<rootDir>/node_modules/'],
 };
