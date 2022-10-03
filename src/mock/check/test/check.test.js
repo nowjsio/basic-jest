@@ -1,6 +1,14 @@
 import { jest } from '@jest/globals';
 import { check } from '../check';
 
+// jest.mock(`../check.js`);
+// check.mockImplementation((predicate, onSuccess, onFail) => {
+//   if (predicate && predicate()) {
+//     onSuccess('success@');
+//   } else {
+//     onFail('failed');
+//   }
+// });
 describe('check', () => {
   let onSuccess;
   let onFail;
